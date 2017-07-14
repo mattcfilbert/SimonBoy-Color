@@ -13,15 +13,6 @@ var hiScore = parseInt(localStorage.getItem('hiScore'))
 var sound = document.getElementById('loseSound')
 var power = true
 
-// sets high score counter to saved high score
-function scoreFix () {
-  if (hiScore < 1) {
-    $('#hi').html(`High Score: 0`)
-  } else {
-    $('#hi').html(`High Score: ${hiScore}`)
-  }
-}
-
 // to play sounds
 function playAudio () {
   sound.play()
@@ -85,9 +76,10 @@ function handleClick () {
       $('#hi').html(`High Score: ${hiScore}`)
       $('#says2').html(`New High Score: ${hiScore}`)
     } else if (hiScore >= level) {
-      $('#says2').html(` You had to beat ${1 + hiScore - level} more levels for the high score`)
+      $('#says2').html(` You had to beat ${1 + hiScore - level} more levels to beat the high score of ${hiScore}`)
     }
     $('#says').html('LOSER!')
+    scoreFix()
   } else {
     if (userArr.length === compArr.length) {
       console.log('You win!')
@@ -167,7 +159,7 @@ function playGame () {
   }
 }
 
-scoreFix()
+
 
 buttons.on('click', handleClick)
 

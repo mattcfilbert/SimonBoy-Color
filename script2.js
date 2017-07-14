@@ -8,7 +8,7 @@ var cC = -1
 var text = ''
 var sSays = 'obgy'
 var level = 0
-// returns saved high score
+// returns saved high score... works on my browser when hosted locally, but not on githubpages
 // var hiScore = parseInt(localStorage.getItem('hiScore'))
 var hiScore = 0
 var sound = document.getElementById('loseSound')

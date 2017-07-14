@@ -1,0 +1,204 @@
+
+div {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 75px;
+}
+
+h1 {
+color: white;
+font-size: 40px;
+}
+
+h2 {
+  border-width: 2px;
+  padding: 10px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 25px;
+  background-color: white;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  display: inline;
+  background-color: black;
+  padding: 10px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+p {
+  font-size: 26px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+
+}
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: black;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: black;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+#outer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  background-color: #00b300;
+  height: 1000px;
+  width: 800px;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+#inner {
+  border: 10px inset gray;
+  padding: 5px;
+  width: 680px;
+  padding: 30px 30px 0px 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  width: 600px;
+  border-radius: 25px;
+}
+
+.sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 10px;
+  background-color: teal;
+  border-width: 10px;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: 50px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+  border-width: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+.butts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#start {
+  font-size: 20px;
+}
+
+#kick {
+  font-family: "Comic Sans MS", Times, sans-serif;
+  font-size: 20px;
+}
+
+#power {
+  font-size: 20px;
+  background-color: black;
+}
+
+.off {
+  opacity: 0;
+}
+
+#r {background-color: red;
+    display: none;
+}
+
+#b {
+  background-color: blue;
+}
+
+#g {
+  background-color: green;
+}
+
+#y {
+  background-color: yellow;
+}
+
+#o {
+  background-color: orange;
+}
+
+#p {
+  background-color: purple;
+  display: none;
+}
+
+#l {
+  background-color: lemonchiffon;
+  display: none;
+}
+
+#c {
+  background-image: url('cat.jpg');
+  display: none;
+   background-position: center;
+}
+
+#red {
+  color: red;
+}
+
+#purple {
+  color: purple;
+}
+
+#green {
+  color: green
+}
+
+#yellow {
+  color: yellow;
+}
+
+#blue {
+  color: blue;
+}

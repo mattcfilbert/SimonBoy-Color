@@ -9,7 +9,8 @@ var text = ''
 var sSays = 'obgy'
 var level = 0
 // returns saved high score
-var hiScore = parseInt(localStorage.getItem('hiScore'))
+// var hiScore = parseInt(localStorage.getItem('hiScore'))
+var hiScore = 0
 var sound = document.getElementById('loseSound')
 var power = true
 
@@ -71,8 +72,8 @@ function handleClick () {
     playAudio()
     if (level > hiScore) {
       hiScore = level
-      // save high score even if page refresh
-      localStorage.setItem('hiScore', hiScore)
+      // save high score even if page refresh.. broken online?
+      // localStorage.setItem('hiScore', hiScore)
       $('#hi').html(`High Score: ${hiScore}`)
       $('#says2').html(`New High Score: ${hiScore}`)
     } else if (hiScore >= level) {
